@@ -51,14 +51,28 @@ ol {
     color: black; /* Ensure all text within the text class is black */
 }
 
+/* Styling for the image to be circular */
 .author {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    align-self: left;
+    margin-right: 10px; /* Adds space between the image and the text */
     transition: transform 0.3s;
 }
 
+/* Hover effect for the image */
 .author:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Makes the image slightly bigger when hovered */
+}
+
+/* Flexbox layout for the "Proposed by" section */
+.author-and-text {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text */
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
