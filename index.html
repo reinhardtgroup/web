@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinhardt Group</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1>Reinhardt Group</h1>
+    <h3>Executive Board</h3>
+
+    <div class="board-container">
+        <div class="eo">
+            <img class="portrait" src="assets/JosephReinhardt.png" alt="Joseph Reinhardt Portrait">
+            <p class="username">Joseph Reinhardt<br><span class="title">Chairman</span></p>
+        </div>
+        <div class="eo">
+            <img class="portrait" src="assets/RichardReinhardt.png" alt="Richard Reinhardt Portrait">
+            <p class="username">Richard Reinhardt<br><span class="title">Vice Chairman</span></p>
+        </div>
+    </div>
+
+    <div class="centered-bubble">
+        <p>Welcome to Reinhardt Group, where we lead with innovation and commitment to excellence. Our team is dedicated to bringing forward-thinking solutions to every challenge.</p>
+    </div>
+
+    <h3>Our Objectives</h3>
+    <div class="objective-container">
+        <div class="objective-box" onclick="openModal('innovationModal')">
+            <span>Innovation</span>
+            <p>Pioneering new ideas to drive progress and growth.</p>
+        </div>
+        <div class="objective-box" onclick="openModal('leadershipModal')">
+            <span>Leadership</span>
+            <p>Empowering others to achieve their fullest potential.</p>
+        </div>
+        <div class="objective-box" onclick="openModal('excellenceModal')">
+            <span>Excellence</span>
+            <p>Committing to the highest standards in everything we do.</p>
+        </div>
+    </div>
+    
+    <!-- Innovation Modal -->
+    <div id="innovationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">Innovation</div>
+            <span class="close" onclick="closeModal('innovationModal')">&times;</span>
+            <p class="modal-description">
+                Innovation is at the core of everything we do at Reinhardt Group. We strive to stay ahead of the curve by developing cutting-edge solutions that address real-world problems. By fostering a culture of creativity and risk-taking, we empower our team to think outside the box and generate groundbreaking ideas that drive progress and success. Whether through technological advancements or novel approaches to business challenges, we are committed to bringing new and improved ways of thinking to our clients.
+            </p>
+        </div>
+    </div>
+
+    <!-- Leadership Modal -->
+    <div id="leadershipModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">Leadership</div>
+            <span class="close" onclick="closeModal('leadershipModal')">&times;</span>
+            <p class="modal-description">
+                At Reinhardt Group, we believe in the power of leadership to inspire and create lasting impact. We empower our team members to take ownership of their work, encouraging a culture where individuals feel supported and motivated to lead by example. Leadership here means guiding others with integrity, building trust, and helping people reach their highest potential. Our leaders are not just decision-makers; they are mentors, coaches, and sources of inspiration.
+            </p>
+        </div>
+    </div>
+
+    <!-- Excellence Modal -->
+    <div id="excellenceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">Excellence</div>
+            <span class="close" onclick="closeModal('excellenceModal')">&times;</span>
+            <p class="modal-description">
+                Excellence is the foundation of Reinhardt Group’s culture. We hold ourselves and our work to the highest standards, constantly striving for the best in everything we do. Whether it’s delivering exceptional service to our clients, innovating with our solutions, or creating a positive and productive work environment, we are driven by a commitment to excellence. Our team’s dedication to continuous improvement ensures that we are always growing and evolving to meet the demands of the future.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName("modal");
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

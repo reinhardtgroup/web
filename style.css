@@ -1,0 +1,240 @@
+/* Body and general styling */
+body {
+    background-color: rgb(29, 29, 29); /* Darker background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 10px solid gold; /* Gold border around the page */
+    box-sizing: border-box; /* Ensures border doesn't affect content sizing */
+}
+
+/* Documents Link in Top Corner */
+.documents-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.documents-link:hover {
+    text-decoration: underline;
+}
+
+/* Title for the entire page */
+h1 {
+    font-weight: 800;
+    color: gold;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Executive board section */
+h3 {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bubbles for individual members - gold background */
+.eo {
+    background-color: gold; /* Gold color */
+    border-radius: 25px; /* Softer, rounded edges */
+    padding: 30px;
+    width: 350px; /* Increased width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    display: inline-flex; /* Use flex to align items inside */
+    flex-direction: column; /* Stack image and text vertically inside the bubble */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Member portrait styling */
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Add space between the image and text */
+}
+
+/* Text styles for the username and title */
+.username {
+    color: black; /* Text color changed to black for contrast */
+    font-size: 16px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bolder;
+    color: black; /* Text color changed to black for contrast */
+}
+
+/* Container for the board members */
+.board-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Centered paragraph section */
+.centered-bubble {
+    background-color: gold; /* Gold color */
+    border-radius: 25px; /* Softer, rounded edges */
+    padding: 30px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    color: black;
+}
+
+/* Round boxes for objectives - larger and gold */
+.objective-box {
+    background-color: gold; /* Gold color */
+    border-radius: 25px; /* Softer, rounded edges */
+    width: 250px; /* Larger size */
+    height: 250px; /* Larger size */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.objective-box:hover {
+    transform: scale(1.05);
+}
+
+/* Objective descriptions inside the bubble */
+.objective-box p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Objective container for layout */
+.objective-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding-top: 60px;
+}
+
+/* Modal content (box) */
+.modal-content {
+    background-color: gold; /* Gold background for modal */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Set the width of the modal */
+    border-radius: 15px;
+    color: black;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Title Bar */
+.modal-title-bar {
+    background-color: white; /* White background */
+    color: black; /* Black text color */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0; /* Rounded corners for the top of the modal */
+    width: 100%; /* Ensure title bar spans the entire width */
+    box-sizing: border-box; /* Make sure the width accounts for padding and borders */
+    margin-bottom: 10px; /* Adds spacing between the title and description */
+}
+
+/* Modal Description */
+.modal-description {
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* Footer Section (Black Bar for links) */
+footer {
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Document Boxes */
+.document-box {
+    background-color: #444;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.document-link {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
