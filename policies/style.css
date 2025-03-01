@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: black; /* Ensures the text color is black */
     border: 10px solid gold;
     box-sizing: border-box;
     padding: 20px; /* Adds some space inside the border */
@@ -16,26 +16,26 @@ body {
 h1, h2, p, ol {
     text-align: left; /* Ensure text is aligned to the left */
     margin-left: 0;
-    color: rgb(29, 29, 29);
+    color: black; /* Update text color to black */
 }
 
 ol {
     padding-left: 20px;
-    color: rgb(29, 29, 29);
+    color: black; /* Ensure the list text is black */
 }
 
 .title, .company, .username {
     display: block; /* Ensures each stays on a new line */
     margin: 0; /* Removes default margins */
     line-height: 1.2; /* Reduces spacing */
-    color: rgb(29, 29, 29);
+    color: black; /* Ensure text is black */
 }
 
 .policy-container {
     background-color: gold; /* Gold color */
     border-radius: 25px; /* Softer, rounded edges */
     padding: 30px;
-    width: 700px; /* Increased width */
+    width: 800px; /* Increased width */
     align-self: center;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -45,4 +45,8 @@ ol {
     align-items: flex-start;
     justify-content: flex-start;
     transition: transform 0.3s;
+}
+
+.text {
+    color: black; /* Ensure all text within the text class is black */
 }
