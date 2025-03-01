@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     border: 10px solid gold;
     box-sizing: border-box;
     padding: 20px; /* Adds some space inside the border */
@@ -32,7 +32,7 @@ ol {
     background-color: gold; /* Gold color */
     border-radius: 25px; /* Softer, rounded edges */
     padding: 30px;
-    width: 250px; /* Increased width */
+    width: 700px; /* Increased width */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 15px;
