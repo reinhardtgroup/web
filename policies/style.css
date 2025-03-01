@@ -24,8 +24,11 @@ ol {
 
 .title {
     font-style: italic;
+    margin-top: 2px; /* Reduce space between lines */
+    margin-bottom: 2px;
 }
 
 .company {
-    font-weight: bolder
+    font-weight: bold;
+    margin-top: 2px;
 }
