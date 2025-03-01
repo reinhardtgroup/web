@@ -1,47 +1,38 @@
 body {
-    background-color: rgb(29, 29, 29); /* Darker background */
+    background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start; /* Align content to the left */
     justify-content: flex-start;
     min-height: 100vh;
-    margin: 0;
+    margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border: 10px solid gold; /* Gold border around the page */
-    box-sizing: border-box; /* Ensures border doesn't affect content sizing */
+    border: 10px solid gold;
+    box-sizing: border-box;
+    padding-left: 30px; /* Space from left edge */
 }
 
-h1 {
+h1, .heading2 {
     font-weight: 800;
     color: gold;
-    text-align: center;
     margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.heading1 {
-    font-weight: 100;
-    color: gold;
-    text-align: center;
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .text {
     font-weight: 100;
     font-size: large;
     color: white;
-    text-align: center;
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
 }
 
-.company {
-    font-weight: bolder;
+ol {
+    padding-left: 30px; /* Ensures lists align properly */
 }
 
 .sig {
-    width: 100px;
-    height: 100px;
+    max-width: 300px; /* Adjust signature size */
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px; /* Align with left content */
 }
