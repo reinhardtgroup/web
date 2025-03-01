@@ -52,8 +52,8 @@ ol {
 }
 
 .author {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     align-self: left;
     transition: transform 0.3s;
