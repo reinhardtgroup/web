@@ -22,13 +22,12 @@ ol {
     padding-left: 20px;
 }
 
-.title {
-    font-style: italic;
-    margin-top: 2px; /* Reduce space between lines */
-    margin-bottom: 2px;
+.title, .company {
+    display: block; /* Ensures each stays on a new line */
+    margin: 0; /* Removes default margins */
+    line-height: 1.2; /* Reduces spacing */
 }
 
 .company {
-    font-weight: bold;
-    margin-top: 2px;
+    font-weight: bold; /* Ensures "Reinhardt Group" is bold */
 }
