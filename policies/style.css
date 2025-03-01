@@ -21,3 +21,11 @@ h1, h2, p, ol {
 ol {
     padding-left: 20px;
 }
+
+.title {
+    font-style: italic;
+}
+
+.company {
+    font-weight: bolder
+}
