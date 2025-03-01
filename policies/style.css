@@ -61,7 +61,7 @@ ol {
 
 /* Hover effect for the image */
 .author:hover {
-    transform: scale(1.1); /* Makes the image slightly bigger when hovered */
+    transform: scale(1.5); /* Makes the image slightly bigger when hovered */
 }
 
 /* Flexbox layout for the "Proposed by" section */
