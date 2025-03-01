@@ -50,3 +50,19 @@ ol {
 .text {
     color: black; /* Ensure all text within the text class is black */
 }
+
+.directory-listing {
+    background-color: gold; /* Gold color */
+    border-radius: 25px; /* Softer, rounded edges */
+    padding: 30px;
+    width: 200px; /* Increased width */
+    align-self: left;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    display: inline-flex; /* Use flex to align items inside */
+    flex-direction: column; /* Stack image and text vertically inside the bubble */
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s;
+}
