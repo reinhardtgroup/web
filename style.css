@@ -59,13 +59,14 @@ h3 {
     flex-direction: column; /* Stack image and text vertically inside the bubble */
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s;
 }
 
 /* Member portrait styling */
 .portrait {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-bottom: 15px; /* Add space between the image and text */
 }
 
@@ -121,6 +122,10 @@ h3 {
 }
 
 .objective-box:hover {
+    transform: scale(1.05);
+}
+
+.eo:hover {
     transform: scale(1.05);
 }
 

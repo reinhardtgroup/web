@@ -12,13 +12,13 @@
     <h3>Executive Board</h3>
 
     <div class="board-container">
-        <div class="eo">
-            <img class="portrait" src="assets/JosephReinhardt.png" alt="Joseph Reinhardt Portrait">
-            <p class="username">Joseph Reinhardt<br><span class="title">Chairman</span></p>
+        <div class="eo" onclick="openModal('josephModal')">
+            <img class="portrait" src="assets/JosephReinhardt.png" alt="JosephReinhardt Portrait">
+            <p class="username">JosephReinhardt<br><span class="title">Chairman</span></p>
         </div>
-        <div class="eo">
-            <img class="portrait" src="assets/RichardReinhardt.png" alt="Richard Reinhardt Portrait">
-            <p class="username">Richard Reinhardt<br><span class="title">Vice Chairman</span></p>
+        <div class="eo" onclick="openModal('richardModal')">
+            <img class="portrait" src="assets/RichardReinhardt.png" alt="RichardReinhardt Portrait">
+            <p class="username">RichardReinhardt<br><span class="title">Vice Chairman</span></p>
         </div>
     </div>
 
@@ -71,6 +71,26 @@
             <span class="close" onclick="closeModal('excellenceModal')">&times;</span>
             <p class="modal-description">
                 Excellence is the foundation of Reinhardt Group’s culture. We hold ourselves and our work to the highest standards, constantly striving for the best in everything we do. Whether it’s delivering exceptional service to our clients, innovating with our solutions, or creating a positive and productive work environment, we are driven by a commitment to excellence. Our team’s dedication to continuous improvement ensures that we are always growing and evolving to meet the demands of the future.
+            </p>
+        </div>
+    </div>
+
+    <div id="josephModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">JosephReinhardt - Chairman of the Executive Board</div>
+            <span class="close" onclick="closeModal('josephModal')">&times;</span>
+            <p class="modal-description">
+                JosephReinhardt is the Chairman of the Executive Board at Reinhardt Group. With a background in business development and strategic planning, Joseph brings a wealth of experience to the company. He is known for his visionary leadership and ability to drive innovation in the organization. Under his guidance, Reinhardt Group has grown into a leading provider of cutting-edge solutions in the industry. Joseph is committed to excellence and is dedicated to helping the company achieve its goals and objectives. He is the incorporator and was appointed inaugural Chairman until the end of the second quarter of 2025.
+            </p>
+        </div>
+    </div>
+
+    <div id="richardModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title-bar">JosephReinhardt - Chairman of the Executive Board</div>
+            <span class="close" onclick="closeModal('richardModal')">&times;</span>
+            <p class="modal-description">
+                RichardReinhardt is the Vice Chairman of the Executive Board at Reinhardt Group. With a background in finance and operations, Richard brings a unique perspective to the company. He is known for his strategic thinking and ability to drive results in the organization. Under his leadership, Reinhardt Group has expanded its reach and grown its client base. Richard is committed to excellence and is dedicated to helping the company achieve its goals and objectives. He is the incorporator and was appointed inaugural Vice Chairman until the end of the second quarter of 2025.
             </p>
         </div>
     </div>
