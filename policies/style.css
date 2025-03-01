@@ -61,18 +61,18 @@ ol {
 
 /* Hover effect for the image */
 .author:hover {
-    transform: scale(1.35); /* Makes the image slightly bigger when hovered */
+    transform: scale(1.1); /* Makes the image slightly bigger when hovered */
 }
 
 /* Flexbox layout for the "Proposed by" section */
 .author-and-text {
     display: flex;
     align-items: center; /* Vertically aligns the image and text */
+    justify-content: flex-start; /* Ensures elements stay aligned to the left */
     margin-bottom: 10px; /* Adds some space below the "Proposed by" section */
 }
 
 .company {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
+    margin-left: 10px; /* Adds space between the image and the text */
+    color: black; /* Ensures the company text is also black */
 }
