@@ -16,16 +16,19 @@ body {
 h1, h2, p, ol {
     text-align: left; /* Ensure text is aligned to the left */
     margin-left: 0;
+    color: rgb(29, 29, 29);
 }
 
 ol {
     padding-left: 20px;
+    color: rgb(29, 29, 29);
 }
 
 .title, .company, .username {
     display: block; /* Ensures each stays on a new line */
     margin: 0; /* Removes default margins */
     line-height: 1.2; /* Reduces spacing */
+    color: rgb(29, 29, 29);
 }
 
 .policy-container {
@@ -33,12 +36,13 @@ ol {
     border-radius: 25px; /* Softer, rounded edges */
     padding: 30px;
     width: 700px; /* Increased width */
+    align-self: center;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 15px;
     display: inline-flex; /* Use flex to align items inside */
     flex-direction: column; /* Stack image and text vertically inside the bubble */
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     transition: transform 0.3s;
 }
