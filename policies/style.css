@@ -27,3 +27,18 @@ ol {
     margin: 0; /* Removes default margins */
     line-height: 1.2; /* Reduces spacing */
 }
+
+.policy-container {
+    background-color: gold; /* Gold color */
+    border-radius: 25px; /* Softer, rounded edges */
+    padding: 30px;
+    width: 250px; /* Increased width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    display: inline-flex; /* Use flex to align items inside */
+    flex-direction: column; /* Stack image and text vertically inside the bubble */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
