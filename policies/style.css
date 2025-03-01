@@ -56,4 +56,9 @@ ol {
     height: 50px;
     border-radius: 50%;
     align-self: left;
+    transition: transform 0.3s;
+}
+
+.author:hover {
+    transform: scale(1.05);
 }
