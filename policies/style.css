@@ -27,7 +27,3 @@ ol {
     margin: 0; /* Removes default margins */
     line-height: 1.2; /* Reduces spacing */
 }
-
-.company {
-    font-weight: bold; /* Ensures "Reinhardt Group" is bold */
-}
