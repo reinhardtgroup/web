@@ -1,6 +1,6 @@
-/* Body and general styling */
+/* General body styling */
 body {
-    background-color: rgb(29, 29, 29); /* Darker background */
+    background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,11 +9,10 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border: 10px solid gold; /* Gold border around the page */
-    box-sizing: border-box; /* Ensures border doesn't affect content sizing */
+    border: 10px solid gold;
+    box-sizing: border-box;
 }
 
-/* Documents Link in Top Corner */
 .documents-link {
     position: absolute;
     top: 10px;
@@ -27,72 +26,63 @@ body {
     text-decoration: underline;
 }
 
-/* Title for the entire page */
 h1 {
     font-weight: 800;
     color: gold;
     text-align: center;
     margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Executive board section */
 h3 {
     font-weight: 600;
     color: white;
     text-align: center;
     margin: 20px 0;
     font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Bubbles for individual members - gold background */
 .eo {
-    background-color: gold; /* Gold color */
-    border-radius: 25px; /* Softer, rounded edges */
+    background-color: gold;
+    border-radius: 25px;
     padding: 30px;
-    width: 250px; /* Increased width */
+    width: 250px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 15px;
-    display: inline-flex; /* Use flex to align items inside */
-    flex-direction: column; /* Stack image and text vertically inside the bubble */
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s;
 }
 
-/* Member portrait styling */
 .portrait {
     width: 150px;
     height: 150px;
     border-radius: 20%;
-    margin-bottom: 15px; /* Add space between the image and text */
+    margin-bottom: 15px;
 }
 
-/* Text styles for the username and title */
 .username {
-    color: black; /* Text color changed to black for contrast */
+    color: black;
     font-size: 16px;
     text-align: center;
 }
 
 .title {
     font-weight: bolder;
-    color: black; /* Text color changed to black for contrast */
+    color: black;
 }
 
-/* Container for the board members */
 .board-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Centered paragraph section */
 .centered-bubble {
-    background-color: gold; /* Gold color */
-    border-radius: 25px; /* Softer, rounded edges */
+    background-color: gold;
+    border-radius: 25px;
     padding: 30px;
     width: 60%;
     text-align: center;
@@ -101,12 +91,11 @@ h3 {
     color: black;
 }
 
-/* Round boxes for objectives - larger and gold */
 .objective-box {
-    background-color: gold; /* Gold color */
-    border-radius: 25px; /* Softer, rounded edges */
-    width: 250px; /* Larger size */
-    height: 250px; /* Larger size */
+    background-color: gold;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -129,7 +118,6 @@ h3 {
     transform: scale(1.05);
 }
 
-/* Objective descriptions inside the bubble */
 .objective-box p {
     font-size: 16px;
     font-weight: normal;
@@ -137,38 +125,35 @@ h3 {
     color: black;
 }
 
-/* Objective container for layout */
 .objective-container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
-/* Modal container */
+/* Modal styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 1; /* Sit on top */
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding-top: 60px;
 }
 
-/* Modal content (box) */
 .modal-content {
-    background-color: gold; /* Gold background for modal */
+    background-color: gold;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Set the width of the modal */
+    width: 50%;
     border-radius: 15px;
     color: black;
 }
 
-/* Close button */
 .close {
     color: #aaa;
     float: right;
@@ -183,28 +168,26 @@ h3 {
     cursor: pointer;
 }
 
-/* Modal Title Bar */
 .modal-title-bar {
-    background-color: white; /* White background */
-    color: black; /* Black text color */
+    background-color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
     padding: 10px 0;
     font-size: 20px;
-    border-radius: 5px 5px 0 0; /* Rounded corners for the top of the modal */
-    width: 100%; /* Ensure title bar spans the entire width */
-    box-sizing: border-box; /* Make sure the width accounts for padding and borders */
-    margin-bottom: 10px; /* Adds spacing between the title and description */
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-/* Modal Description */
 .modal-description {
     font-size: 18px;
     margin-top: 15px;
     padding: 10px;
 }
 
-/* Footer Section (Black Bar for links) */
+/* Footer Section */
 footer {
     background-color: #222;
     width: 100%;
@@ -242,4 +225,58 @@ footer a:hover {
     color: gold;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Responsive design */
+
+/* For devices with width <= 768px */
+@media (max-width: 768px) {
+    .eo {
+        width: 80%; /* Full width for smaller screens */
+        padding: 15px;
+    }
+
+    .portrait {
+        width: 120px;
+        height: 120px;
+    }
+
+    .board-container {
+        flex-direction: column; /* Stack the members vertically */
+    }
+
+    .objective-box {
+        width: 200px; /* Smaller box */
+        height: 200px;
+    }
+
+    .modal-content {
+        width: 80%; /* Modal takes more width */
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* For devices with width <= 480px */
+@media (max-width: 480px) {
+    .eo {
+        width: 100%; /* Full screen width for mobile */
+        padding: 10px;
+    }
+
+    .portrait {
+        width: 100px;
+        height: 100px;
+    }
+
+    .objective-box {
+        width: 150px; /* Smaller box */
+        height: 150px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
 }

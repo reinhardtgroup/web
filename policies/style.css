@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     background-color: rgb(29, 29, 29);
     display: flex;
@@ -7,51 +8,50 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: black; /* Ensures the text color is black */
+    color: black;
     border: 10px solid gold;
     box-sizing: border-box;
-    padding: 20px; /* Adds some space inside the border */
+    padding: 20px;
 }
 
 h1, h2, p, ol {
-    text-align: left; /* Ensure text is aligned to the left */
+    text-align: left;
     margin-left: 0;
-    color: black; /* Update text color to black */
+    color: black;
 }
 
 ol {
     padding-left: 20px;
-    color: black; /* Ensure the list text is black */
+    color: black;
 }
 
 .title, .company, .username {
-    display: block; /* Ensures each stays on a new line */
-    margin: 0; /* Removes default margins */
-    line-height: 1.2; /* Reduces spacing */
-    color: black; /* Ensure text is black */
+    display: block;
+    margin: 0;
+    line-height: 1.2;
+    color: black;
 }
 
 .policy-container {
-    background-color: gold; /* Gold color */
-    border-radius: 25px; /* Softer, rounded edges */
+    background-color: gold;
+    border-radius: 25px;
     padding: 30px;
-    width: 800px; /* Increased width */
+    width: 800px;
     align-self: center;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 15px;
-    display: inline-flex; /* Use flex to align items inside */
-    flex-direction: column; /* Stack image and text vertically inside the bubble */
+    display: inline-flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     transition: transform 0.3s;
 }
 
 .text {
-    color: black; /* Ensure all text within the text class is black */
+    color: black;
 }
 
-/* Styling for the image to be circular */
 .author {
     width: 30px;
     height: 30px;
@@ -59,20 +59,78 @@ ol {
     transition: transform 0.3s;
 }
 
-/* Hover effect for the image */
 .author:hover {
-    transform: scale(1.4); /* Makes the image slightly bigger when hovered */
+    transform: scale(1.4);
 }
 
-/* Flexbox layout for the "Proposed by" section */
 .author-and-text {
     display: flex;
-    align-items: center; /* Vertically aligns the image and text */
-    justify-content: flex-start; /* Ensures elements stay aligned to the left */
-    margin-bottom: 10px; /* Adds some space below the "Proposed by" section */
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
 .company {
-    margin-left: 10px; /* Adds space between the image and the text */
-    color: black; /* Ensures the company text is also black */
+    margin-left: 10px;
+    color: black;
+}
+
+/* Responsive design with media queries */
+
+/* For devices with width <= 768px (tablets and small screens) */
+@media (max-width: 768px) {
+    .policy-container {
+        width: 90%; /* Use 90% of screen width */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .author {
+        width: 25px; /* Smaller image */
+        height: 25px;
+    }
+
+    .company {
+        font-size: 14px; /* Smaller text */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller main title */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller subheadings */
+    }
+
+    .text {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+}
+
+/* For devices with width <= 480px (smartphones) */
+@media (max-width: 480px) {
+    .policy-container {
+        width: 100%; /* Full screen width */
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .author {
+        width: 20px; /* Even smaller image */
+        height: 20px;
+    }
+
+    .company {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Even smaller main title */
+    }
+
+    h2 {
+        font-size: 16px; /* Smaller subheadings */
+    }
+
+    .text {
+        font-size: 12px; /* Smaller paragraph text */
+    }
 }
