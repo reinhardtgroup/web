@@ -21,10 +21,3 @@ h1, h2, p, ol {
 ol {
     padding-left: 20px;
 }
-
-.sig {
-    max-width: 250px; /* Adjust signature size */
-    display: block;
-    margin-top: 20px;
-    margin-left: 0; /* Align to the left */
-}
