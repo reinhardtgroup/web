@@ -40,3 +40,8 @@ h1 {
 .company {
     font-weight: bolder;
 }
+
+.sig {
+    width: 100px;
+    height: 100px;
+}
